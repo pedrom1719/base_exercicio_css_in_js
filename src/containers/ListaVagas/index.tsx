@@ -1,26 +1,9 @@
 import { useState } from 'react'
 
-import styled from 'styled-components'
-import '../../global'
-
 import FormVagas from '../../components/FormVagas'
 import Vaga from '../../components/Vaga'
 
-const VagasListSection = styled.div`
-  .vagas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 16px;
-    margin-top: 32px;
-  }
-
-  @media (max-width: 768px) {
-    .vagas {
-      grid-template-columns: 1fr;
-    }
-  }
-`
+import { VagasListSection } from './styles'
 
 type Vaga = {
   id: string
